@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@200&display=swap');
+
+/*----------------------- Basics of Site --------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.show {
+    position: relative;
+    padding: 0;
+    display: inline-block;
+}
+
+table tr td {
+    font-size: 28px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+table {
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    position: relative;
+}
+
+.rightLines::after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rightLines::before {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 10px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.leftLines::after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.leftLines::before {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 10px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.head h3 {
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    padding: 2rem 0;
+}
+
+.head span {
+    color: #1ea391;
+    text-transform: uppercase;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+    background: #00110f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1ea391;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1ea391;
+}
+
+.sign {
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+.goTop {
+    border: none;
+    outline: none;
+    position: fixed;
+    right: 0%;
+    bottom: 5%;
+    background-color: #222;
+    color: #1ea391;
+    font-size: 3em;
+    padding: 10px 20px;
+    border-radius: 10px 0 0 10px;
+    display: none;
+}
+
+
+/*----------------------- Designing of Site --------------------*/
+
+header {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../Assets/wall.jpg');
+    background-size: cover;
+    background-position: 50% 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 10vw;
+    padding-top: 40vh;
+}
+
+header .welcome {
+    width: 41%;
+}
+
+header h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4em;
+    margin: 10px 0;
+}
+
+header .welcome p {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #aaa;
+    text-transform: lowercase;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+header .infoBar {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(180deg, rgba(23, 20, 69, 0) 0%, rgba(0, 0, 0, 1) 80%);
+}
+
+header .infoBar div {
+    padding: 0px 20px;
+}
+
+header .infoBar .info {
+    border-right: 2px solid #777;
+}
+
+header .infoBar .info h2 {
+    font-size: 1.5rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+header .infoBar .info p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+header .infoBar div .min {
+    font-weight: 100;
+    color: #bbb;
+    font-size: 12px;
+}
+
+.basic {
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.basic .matrices {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.basic .matrices .m-cont {
+    padding: 10px;
+}
+
+.basic .matrices .matrix {
+    border-radius: 15px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #ddd;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.089);
+}
+
+.basic .matrices .matrix .details {
+    background-color: rgba(0, 0, 0, 0.824);
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    top: 81%;
+    text-align: center;
+    padding: 20px 10px;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+.basic .matrices .matrix:hover .details {
+    top: 50%;
+}
+
+.basic .matrices .matrix .details h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Operations {
+    background-color: #111;
+    color: #fff;
+    padding: 4em 0;
+}
+
+.Operations .operation {
+    padding: 10px 0;
+}
+
+.Operations button {
+    background-color: #222;
+    color: #1ea391;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 0.3px solid #1ea391;
+    font-weight: 600;
+}
+
+.Operations .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.Operations .details_outer {
+    overflow: hidden;
+    display: none;
+}
+
+.Operations .operation:first-child .details_outer {
+    overflow: hidden;
+    display: block;
+}
+
+.Operations .right {
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Operations .right .rightLines::after,
+.Operations .right .leftLines::after,
+.Operations .right .rightLines::before,
+.Operations .right .leftLines::before {
+    background-color: #fff;
+}
+
+.Operations .right table {
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+}

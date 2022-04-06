@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <link rel="shortcut icon" href="./Assets/think.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Css/main.css">
+
+    <title>Linear Algebra</title>
+</head>
+
+<body>
+    <header>
+        <div class="welcome">
+            <h1>Linear Algibra</h1>
+            <p>Your Gate to learn about Matrices</p>
+        </div>
+
+        <div class="infoBar col-sm-12">
+            <div class="info">
+                <h2 class="name">Mohammed Atef</h2>
+                <p>Developed By</p>
+            </div>
+            <div>
+                <p class="min">
+                    In mathematics, a matrix is a rectangular array or table of numbers, symbols, or expressions, arranged in rows and columns,<br>which is used to represent a mathematical object or a property of such an object.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="basic">
+        <div class="head">
+            <h3>Basic Types Of <span>Matrices</span></h3>
+        </div>
+        <div class="container">
+            <div class="matrices">
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>-2</td>
+                                    <td>4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Row <span>Matrix</span></h4>
+                                <p>A matrix having a single row</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>-1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>-5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Column <span>Matrix</span></h4>
+                                <p>A matrix having a single column</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Null / Zero <span>Matrix</span></h4>
+                                <p>A matrix having all elemtns zero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>-1</td>
+                                    <td>3</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>20</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>-5</td>
+                                    <td>65</td>
+                                    <td>2</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Square <span>Matrix</span></h4>
+                                <p>A matrix having equal number of rows and columns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Diagonal <span>Matrix</span></h4>
+                                <p>A square matrix, all of whose elements except those in the leading diagonal are zero
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Scaler <span>Matrix</span></h4>
+                                <p>A diagonal matrix having all the diagonal elements equal to each other</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Unit <span>Matrix</span></h4>
+                                <p>A diagonal matrix having all the diagonal elements equal to l </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>-10</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Lower Triangular <span>Matrix</span></h4>
+                                <p>A square matrix, in which all the elements below the leading diagonal are zero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>-10</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Upper Triangular <span>Matrix</span></h4>
+                                <p>A square matrix, in which all the elements or above the leading diagonal are zero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>-3</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>-3</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Symmetric <span>Matrix</span></h4>
+                                <p>A square matrix [a<sub>ij</sub>] such that &#8704;<sub>ij</sub> (a<sub>ij</sub> = a<sub>ji</sub>)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-cont col-lg-4 col-md-6 col-xs-12">
+                    <div class="matrix">
+                        <div class="show">
+                            <div class="rightLines"></div>
+                            <div class="leftLines"></div>
+                            <table>
+                                <tr>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>-2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>-3</td>
+                                    <td>-1</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="details overlay">
+                            <div class="head">
+                                <h4>Skew-Symmetric <span>Matrix</span></h4>
+                                <p>A square matrix [a<sub>ij</sub>] such that &#8704;<sub>ij</sub> (a<sub>ij</sub> = -a<sub>ji</sub>) and all elements of the diagonal are ZERO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Operations">
+        <div class="head">
+            <h3>Operations On <span>Matrices</span></h3>
+        </div>
+        <div class="container">
+            <div class="operations">
+                <div class="operation">
+                    <button class="col-sm-12 sliderBTN">Addition and Subtraction</button>
+                    <div class="details_outer">
+                        <div class="details">
+                            <div class="left col-md-4">
+                                <p>
+                                    If A = (a1<sub>ij</sub>) and B = (b<sub>ij</sub>) are m X n matrices, then their sum A + B is defined as the new matrix: (a<sub>ij</sub> + b<sub>ij</sub>), where 1 &le; i &le; m and 1 &le; j &le; n . The order of this
+                                    sum is again m X n. Similarly, A — B is defined. Note that the sum or difference of two matrices is defined only when the matrices have the same size
+                                </p>
+                            </div>
+                            <div class="right op col-md-8">
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <span class="sign"> + </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-1</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <span class="sign"> = </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="operation">
+                    <button class="col-sm-12 sliderBTN">Scaler Multiplication</button>
+                    <div class="details_outer">
+                        <div class="details">
+                            <div class="left col-md-4">
+                                <p>
+                                    If A = (a<sub>ij</sub>) is a matrix and K is a scalar, then the scalar multiple of A by k, denoted by kA, is the matrix B = (b<sub>ij</sub>) defined by b<sub>ij</sub> = ka<sub>ij</sub>. So, to multiply a given matrix
+                                    A by a constant k means to multiply each element of A by k
+                                </p>
+                            </div>
+                            <div class="right op col-md-8">
+                                <span class="sign"> B = KA = </span>
+
+                                <span class="sign"> 2 </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <span class="sign"> = </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>8</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="operation">
+                    <button class="col-sm-12 sliderBTN">Multiplication</button>
+                    <div class="details_outer">
+                        <div class="details">
+                            <div class="left col-md-4">
+                                <p>
+                                    If A = (a<sub>ij</sub>) and B = (b<sub>ij</sub>) are two matrices of orders m X p and p X n, respectively, then the product AB is the new matrix C = (C<sub>ij</sub>) of order m X n defined by the formula: c<sub>ij</sub>                                    = a<sub>i1</sub>b<sub>1j</sub> + a<sub>i2</sub>b<sub>2j</sub> + a<sub>i3</sub>b<sub>3j</sub> where 1 &le; i &le; m and 1 &le; j &le; n
+                                </p>
+                            </div>
+                            <div class="right op col-md-8">
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>-4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <span class="sign"> X </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-2</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>-3</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <span class="sign"> = </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>-20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>-4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="operation">
+                    <button class="col-sm-12 sliderBTN">Transposition</button>
+                    <div class="details_outer">
+                        <div class="details">
+                            <div class="left col-md-4">
+                                <p>
+                                    The transpose of an m X n matrix A = (a<sup>ij</sup>) is defined as the n X m matrix A = (a<sup>ij</sup>), where 1 &le; i &le; m and 1 &le; j &le; n. It is also denoted as A<sup>T</sup> </p>
+                            </div>
+                            <div class="right op col-md-8">
+                                <span class="sign"> A = </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>-4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <span class="sign"> </span>
+                                <span class="sign">,Then</span>
+                                <span class="sign"> A<sup>T</sup> = </span>
+
+                                <div class="show">
+                                    <div class="rightLines"></div>
+                                    <div class="leftLines"></div>
+                                    <table>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-4</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="goTop">
+        <i class="fa-solid fa-caret-up"></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="Script/script.js"></script>
+</body>
+
+</html>
